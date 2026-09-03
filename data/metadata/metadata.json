@@ -1,0 +1,2706 @@
+{
+  "config": {
+    "total_samples": 50,
+    "train_samples": 45,
+    "val_samples": 5,
+    "random_seed": 42,
+    "test_timeout": 5
+  },
+  "selected_samples": [
+    {
+      "program": "rpn_eval",
+      "buggy_file": "QuixBugs/python_programs/rpn_eval.py",
+      "correct_file": "QuixBugs/correct_python_programs/rpn_eval.py",
+      "test_file": "QuixBugs/json_testcases/rpn_eval.json",
+      "test_index": 0,
+      "test_line": 1,
+      "args": [
+        [
+          3.0,
+          5.0,
+          "+",
+          2.0,
+          "/"
+        ]
+      ],
+      "expected": 4.0,
+      "function_name": "rpn_eval",
+      "buggy_result_status": "success",
+      "buggy_error": null
+    },
+    {
+      "program": "knapsack",
+      "buggy_file": "QuixBugs/python_programs/knapsack.py",
+      "correct_file": "QuixBugs/correct_python_programs/knapsack.py",
+      "test_file": "QuixBugs/json_testcases/knapsack.json",
+      "test_index": 6,
+      "test_line": 7,
+      "args": [
+        104,
+        [
+          [
+            25,
+            350
+          ],
+          [
+            35,
+            400
+          ],
+          [
+            45,
+            450
+          ],
+          [
+            5,
+            20
+          ],
+          [
+            25,
+            70
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            2,
+            5
+          ]
+        ]
+      ],
+      "expected": 900,
+      "function_name": "knapsack",
+      "buggy_result_status": "success",
+      "buggy_error": null
+    },
+    {
+      "program": "get_factors",
+      "buggy_file": "QuixBugs/python_programs/get_factors.py",
+      "correct_file": "QuixBugs/correct_python_programs/get_factors.py",
+      "test_file": "QuixBugs/json_testcases/get_factors.json",
+      "test_index": 8,
+      "test_line": 9,
+      "args": [
+        74
+      ],
+      "expected": [
+        2,
+        37
+      ],
+      "function_name": "get_factors",
+      "buggy_result_status": "success",
+      "buggy_error": null
+    },
+    {
+      "program": "find_in_sorted",
+      "buggy_file": "QuixBugs/python_programs/find_in_sorted.py",
+      "correct_file": "QuixBugs/correct_python_programs/find_in_sorted.py",
+      "test_file": "QuixBugs/json_testcases/find_in_sorted.json",
+      "test_index": 1,
+      "test_line": 2,
+      "args": [
+        [
+          1,
+          2,
+          3,
+          4,
+          6,
+          7,
+          8
+        ],
+        5
+      ],
+      "expected": -1,
+      "function_name": "find_in_sorted",
+      "buggy_result_status": "error",
+      "buggy_error": "RecursionError: maximum recursion depth exceeded"
+    },
+    {
+      "program": "subsequences",
+      "buggy_file": "QuixBugs/python_programs/subsequences.py",
+      "correct_file": "QuixBugs/correct_python_programs/subsequences.py",
+      "test_file": "QuixBugs/json_testcases/subsequences.json",
+      "test_index": 7,
+      "test_line": 8,
+      "args": [
+        1,
+        10,
+        4
+      ],
+      "expected": [
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          3,
+          5
+        ],
+        [
+          1,
+          2,
+          3,
+          6
+        ],
+        [
+          1,
+          2,
+          3,
+          7
+        ],
+        [
+          1,
+          2,
+          3,
+          8
+        ],
+        [
+          1,
+          2,
+          3,
+          9
+        ],
+        [
+          1,
+          2,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          4,
+          6
+        ],
+        [
+          1,
+          2,
+          4,
+          7
+        ],
+        [
+          1,
+          2,
+          4,
+          8
+        ],
+        [
+          1,
+          2,
+          4,
+          9
+        ],
+        [
+          1,
+          2,
+          5,
+          6
+        ],
+        [
+          1,
+          2,
+          5,
+          7
+        ],
+        [
+          1,
+          2,
+          5,
+          8
+        ],
+        [
+          1,
+          2,
+          5,
+          9
+        ],
+        [
+          1,
+          2,
+          6,
+          7
+        ],
+        [
+          1,
+          2,
+          6,
+          8
+        ],
+        [
+          1,
+          2,
+          6,
+          9
+        ],
+        [
+          1,
+          2,
+          7,
+          8
+        ],
+        [
+          1,
+          2,
+          7,
+          9
+        ],
+        [
+          1,
+          2,
+          8,
+          9
+        ],
+        [
+          1,
+          3,
+          4,
+          5
+        ],
+        [
+          1,
+          3,
+          4,
+          6
+        ],
+        [
+          1,
+          3,
+          4,
+          7
+        ],
+        [
+          1,
+          3,
+          4,
+          8
+        ],
+        [
+          1,
+          3,
+          4,
+          9
+        ],
+        [
+          1,
+          3,
+          5,
+          6
+        ],
+        [
+          1,
+          3,
+          5,
+          7
+        ],
+        [
+          1,
+          3,
+          5,
+          8
+        ],
+        [
+          1,
+          3,
+          5,
+          9
+        ],
+        [
+          1,
+          3,
+          6,
+          7
+        ],
+        [
+          1,
+          3,
+          6,
+          8
+        ],
+        [
+          1,
+          3,
+          6,
+          9
+        ],
+        [
+          1,
+          3,
+          7,
+          8
+        ],
+        [
+          1,
+          3,
+          7,
+          9
+        ],
+        [
+          1,
+          3,
+          8,
+          9
+        ],
+        [
+          1,
+          4,
+          5,
+          6
+        ],
+        [
+          1,
+          4,
+          5,
+          7
+        ],
+        [
+          1,
+          4,
+          5,
+          8
+        ],
+        [
+          1,
+          4,
+          5,
+          9
+        ],
+        [
+          1,
+          4,
+          6,
+          7
+        ],
+        [
+          1,
+          4,
+          6,
+          8
+        ],
+        [
+          1,
+          4,
+          6,
+          9
+        ],
+        [
+          1,
+          4,
+          7,
+          8
+        ],
+        [
+          1,
+          4,
+          7,
+          9
+        ],
+        [
+          1,
+          4,
+          8,
+          9
+        ],
+        [
+          1,
+          5,
+          6,
+          7
+        ],
+        [
+          1,
+          5,
+          6,
+          8
+        ],
+        [
+          1,
+          5,
+          6,
+          9
+        ],
+        [
+          1,
+          5,
+          7,
+          8
+        ],
+        [
+          1,
+          5,
+          7,
+          9
+        ],
+        [
+          1,
+          5,
+          8,
+          9
+        ],
+        [
+          1,
+          6,
+          7,
+          8
+        ],
+        [
+          1,
+          6,
+          7,
+          9
+        ],
+        [
+          1,
+          6,
+          8,
+          9
+        ],
+        [
+          1,
+          7,
+          8,
+          9
+        ],
+        [
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          2,
+          3,
+          4,
+          6
+        ],
+        [
+          2,
+          3,
+          4,
+          7
+        ],
+        [
+          2,
+          3,
+          4,
+          8
+        ],
+        [
+          2,
+          3,
+          4,
+          9
+        ],
+        [
+          2,
+          3,
+          5,
+          6
+        ],
+        [
+          2,
+          3,
+          5,
+          7
+        ],
+        [
+          2,
+          3,
+          5,
+          8
+        ],
+        [
+          2,
+          3,
+          5,
+          9
+        ],
+        [
+          2,
+          3,
+          6,
+          7
+        ],
+        [
+          2,
+          3,
+          6,
+          8
+        ],
+        [
+          2,
+          3,
+          6,
+          9
+        ],
+        [
+          2,
+          3,
+          7,
+          8
+        ],
+        [
+          2,
+          3,
+          7,
+          9
+        ],
+        [
+          2,
+          3,
+          8,
+          9
+        ],
+        [
+          2,
+          4,
+          5,
+          6
+        ],
+        [
+          2,
+          4,
+          5,
+          7
+        ],
+        [
+          2,
+          4,
+          5,
+          8
+        ],
+        [
+          2,
+          4,
+          5,
+          9
+        ],
+        [
+          2,
+          4,
+          6,
+          7
+        ],
+        [
+          2,
+          4,
+          6,
+          8
+        ],
+        [
+          2,
+          4,
+          6,
+          9
+        ],
+        [
+          2,
+          4,
+          7,
+          8
+        ],
+        [
+          2,
+          4,
+          7,
+          9
+        ],
+        [
+          2,
+          4,
+          8,
+          9
+        ],
+        [
+          2,
+          5,
+          6,
+          7
+        ],
+        [
+          2,
+          5,
+          6,
+          8
+        ],
+        [
+          2,
+          5,
+          6,
+          9
+        ],
+        [
+          2,
+          5,
+          7,
+          8
+        ],
+        [
+          2,
+          5,
+          7,
+          9
+        ],
+        [
+          2,
+          5,
+          8,
+          9
+        ],
+        [
+          2,
+          6,
+          7,
+          8
+        ],
+        [
+          2,
+          6,
+          7,
+          9
+        ],
+        [
+          2,
+          6,
+          8,
+          9
+        ],
+        [
+          2,
+          7,
+          8,
+          9
+        ],
+        [
+          3,
+          4,
+          5,
+          6
+        ],
+        [
+          3,
+          4,
+          5,
+          7
+        ],
+        [
+          3,
+          4,
+          5,
+          8
+        ],
+        [
+          3,
+          4,
+          5,
+          9
+        ],
+        [
+          3,
+          4,
+          6,
+          7
+        ],
+        [
+          3,
+          4,
+          6,
+          8
+        ],
+        [
+          3,
+          4,
+          6,
+          9
+        ],
+        [
+          3,
+          4,
+          7,
+          8
+        ],
+        [
+          3,
+          4,
+          7,
+          9
+        ],
+        [
+          3,
+          4,
+          8,
+          9
+        ],
+        [
+          3,
+          5,
+          6,
+          7
+        ],
+        [
+          3,
+          5,
+          6,
+          8
+        ],
+        [
+          3,
+          5,
+          6,
+          9
+        ],
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        [
+          3,
+          5,
+          7,
+          9
+        ],
+        [
+          3,
+          5,
+          8,
+          9
+        ],
+        [
+          3,
+          6,
+          7,
+          8
+        ],
+        [
+          3,
+          6,
+          7,
+          9
+        ],
+        [
+          3,
+          6,
+          8,
+          9
+        ],
+        [
+          3,
+          7,
+          8,
+          9
+        ],
+        [
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          4,
+          5,
+          6,
+          8
+        ],
+        [
+          4,
+          5,
+          6,
+          9
+        ],
+        [
+          4,
+          5,
+          7,
+          8
+        ],
+        [
+          4,
+          5,
+          7,
+          9
+        ],
+        [
+          4,
+          5,
+          8,
+          9
+        ],
+        [
+          4,
+          6,
+          7,
+          8
+        ],
+        [
+          4,
+          6,
+          7,
+          9
+        ],
+        [
+          4,
+          6,
+          8,
+          9
+        ],
+        [
+          4,
+          7,
+          8,
+          9
+        ],
+        [
+          5,
+          6,
+          7,
+          8
+        ],
+        [
+          5,
+          6,
+          7,
+          9
+        ],
+        [
+          5,
+          6,
+          8,
+          9
+        ],
+        [
+          5,
+          7,
+          8,
+          9
+        ],
+        [
+          6,
+          7,
+          8,
+          9
+        ]
+      ],
+      "function_name": "subsequences",
+      "buggy_result_status": "success",
+      "buggy_error": null
+    },
+    {
+      "program": "levenshtein",
+      "buggy_file": "QuixBugs/python_programs/levenshtein.py",
+      "correct_file": "QuixBugs/correct_python_programs/levenshtein.py",
+      "test_file": "QuixBugs/json_testcases/levenshtein.json",
+      "test_index": 2,
+      "test_line": 3,
+      "args": [
+        "rosettacode",
+        "raisethysword"
+      ],
+      "expected": 8,
+      "function_name": "levenshtein",
+      "buggy_result_status": "success",
+      "buggy_error": null
+    },
+    {
+      "program": "mergesort",
+      "buggy_file": "QuixBugs/python_programs/mergesort.py",
+      "correct_file": "QuixBugs/correct_python_programs/mergesort.py",
+      "test_file": "QuixBugs/json_testcases/mergesort.json",
+      "test_index": 9,
+      "test_line": 10,
+      "args": [
+        [
+          4,
+          3,
+          7,
+          6,
+          5,
+          2,
+          1
+        ]
+      ],
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "function_name": "mergesort",
+      "buggy_result_status": "error",
+      "buggy_error": "RecursionError: maximum recursion depth exceeded"
+    },
+    {
+      "program": "shunting_yard",
+      "buggy_file": "QuixBugs/python_programs/shunting_yard.py",
+      "correct_file": "QuixBugs/correct_python_programs/shunting_yard.py",
+      "test_file": "QuixBugs/json_testcases/shunting_yard.json",
+      "test_index": 4,
+      "test_line": 5,
+      "args": [
+        [
+          4,
+          "+",
+          9,
+          "*",
+          9,
+          "-",
+          10,
+          "+",
+          13
+        ]
+      ],
+      "expected": [
+        4,
+        9,
+        9,
+        "*",
+        "+",
+        10,
+        "-",
+        13,
+        "+"
+      ],
+      "function_name": "shunting_yard",
+      "buggy_result_status": "success",
+      "buggy_error": null
+    },
+    {
+      "program": "sqrt",
+      "buggy_file": "QuixBugs/python_programs/sqrt.py",
+      "correct_file": "QuixBugs/correct_python_programs/sqrt.py",
+      "test_file": "QuixBugs/json_testcases/sqrt.json",
+      "test_index": 3,
+      "test_line": 4,
+      "args": [
+        4,
+        0.2
+      ],
+      "expected": 2,
+      "function_name": "sqrt",
+      "buggy_result_status": "timeout",
+      "buggy_error": "执行超过 5 秒"
+    },
+    {
+      "program": "longest_common_subsequence",
+      "buggy_file": "QuixBugs/python_programs/longest_common_subsequence.py",
+      "correct_file": "QuixBugs/correct_python_programs/longest_common_subsequence.py",
+      "test_file": "QuixBugs/json_testcases/longest_common_subsequence.json",
+      "test_index": 3,
+      "test_line": 4,
+      "args": [
+        "thisisatest",
+        "testing123testing"
+      ],
+      "expected": "tsitest",
+      "function_name": "longest_common_subsequence",
+      "buggy_result_status": "success",
+      "buggy_error": null
+    },
+    {
+      "program": "subsequences",
+      "buggy_file": "QuixBugs/python_programs/subsequences.py",
+      "correct_file": "QuixBugs/correct_python_programs/subsequences.py",
+      "test_file": "QuixBugs/json_testcases/subsequences.json",
+      "test_index": 6,
+      "test_line": 7,
+      "args": [
+        1,
+        10,
+        6
+      ],
+      "expected": [
+        [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          5,
+          8
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          5,
+          9
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          6,
+          7
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          6,
+          8
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          6,
+          9
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          7,
+          8
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          7,
+          9
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          8,
+          9
+        ],
+        [
+          1,
+          2,
+          3,
+          5,
+          6,
+          7
+        ],
+        [
+          1,
+          2,
+          3,
+          5,
+          6,
+          8
+        ],
+        [
+          1,
+          2,
+          3,
+          5,
+          6,
+          9
+        ],
+        [
+          1,
+          2,
+          3,
+          5,
+          7,
+          8
+        ],
+        [
+          1,
+          2,
+          3,
+          5,
+          7,
+          9
+        ],
+        [
+          1,
+          2,
+          3,
+          5,
+          8,
+          9
+        ],
+        [
+          1,
+          2,
+          3,
+          6,
+          7,
+          8
+        ],
+        [
+          1,
+          2,
+          3,
+          6,
+          7,
+          9
+        ],
+        [
+          1,
+          2,
+          3,
+          6,
+          8,
+          9
+        ],
+        [
+          1,
+          2,
+          3,
+          7,
+          8,
+          9
+        ],
+        [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          1,
+          2,
+          4,
+          5,
+          6,
+          8
+        ],
+        [
+          1,
+          2,
+          4,
+          5,
+          6,
+          9
+        ],
+        [
+          1,
+          2,
+          4,
+          5,
+          7,
+          8
+        ],
+        [
+          1,
+          2,
+          4,
+          5,
+          7,
+          9
+        ],
+        [
+          1,
+          2,
+          4,
+          5,
+          8,
+          9
+        ],
+        [
+          1,
+          2,
+          4,
+          6,
+          7,
+          8
+        ],
+        [
+          1,
+          2,
+          4,
+          6,
+          7,
+          9
+        ],
+        [
+          1,
+          2,
+          4,
+          6,
+          8,
+          9
+        ],
+        [
+          1,
+          2,
+          4,
+          7,
+          8,
+          9
+        ],
+        [
+          1,
+          2,
+          5,
+          6,
+          7,
+          8
+        ],
+        [
+          1,
+          2,
+          5,
+          6,
+          7,
+          9
+        ],
+        [
+          1,
+          2,
+          5,
+          6,
+          8,
+          9
+        ],
+        [
+          1,
+          2,
+          5,
+          7,
+          8,
+          9
+        ],
+        [
+          1,
+          2,
+          6,
+          7,
+          8,
+          9
+        ],
+        [
+          1,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          1,
+          3,
+          4,
+          5,
+          6,
+          8
+        ],
+        [
+          1,
+          3,
+          4,
+          5,
+          6,
+          9
+        ],
+        [
+          1,
+          3,
+          4,
+          5,
+          7,
+          8
+        ],
+        [
+          1,
+          3,
+          4,
+          5,
+          7,
+          9
+        ],
+        [
+          1,
+          3,
+          4,
+          5,
+          8,
+          9
+        ],
+        [
+          1,
+          3,
+          4,
+          6,
+          7,
+          8
+        ],
+        [
+          1,
+          3,
+          4,
+          6,
+          7,
+          9
+        ],
+        [
+          1,
+          3,
+          4,
+          6,
+          8,
+          9
+        ],
+        [
+          1,
+          3,
+          4,
+          7,
+          8,
+          9
+        ],
+        [
+          1,
+          3,
+          5,
+          6,
+          7,
+          8
+        ],
+        [
+          1,
+          3,
+          5,
+          6,
+          7,
+          9
+        ],
+        [
+          1,
+          3,
+          5,
+          6,
+          8,
+          9
+        ],
+        [
+          1,
+          3,
+          5,
+          7,
+          8,
+          9
+        ],
+        [
+          1,
+          3,
+          6,
+          7,
+          8,
+          9
+        ],
+        [
+          1,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        [
+          1,
+          4,
+          5,
+          6,
+          7,
+          9
+        ],
+        [
+          1,
+          4,
+          5,
+          6,
+          8,
+          9
+        ],
+        [
+          1,
+          4,
+          5,
+          7,
+          8,
+          9
+        ],
+        [
+          1,
+          4,
+          6,
+          7,
+          8,
+          9
+        ],
+        [
+          1,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          2,
+          3,
+          4,
+          5,
+          6,
+          8
+        ],
+        [
+          2,
+          3,
+          4,
+          5,
+          6,
+          9
+        ],
+        [
+          2,
+          3,
+          4,
+          5,
+          7,
+          8
+        ],
+        [
+          2,
+          3,
+          4,
+          5,
+          7,
+          9
+        ],
+        [
+          2,
+          3,
+          4,
+          5,
+          8,
+          9
+        ],
+        [
+          2,
+          3,
+          4,
+          6,
+          7,
+          8
+        ],
+        [
+          2,
+          3,
+          4,
+          6,
+          7,
+          9
+        ],
+        [
+          2,
+          3,
+          4,
+          6,
+          8,
+          9
+        ],
+        [
+          2,
+          3,
+          4,
+          7,
+          8,
+          9
+        ],
+        [
+          2,
+          3,
+          5,
+          6,
+          7,
+          8
+        ],
+        [
+          2,
+          3,
+          5,
+          6,
+          7,
+          9
+        ],
+        [
+          2,
+          3,
+          5,
+          6,
+          8,
+          9
+        ],
+        [
+          2,
+          3,
+          5,
+          7,
+          8,
+          9
+        ],
+        [
+          2,
+          3,
+          6,
+          7,
+          8,
+          9
+        ],
+        [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        [
+          2,
+          4,
+          5,
+          6,
+          7,
+          9
+        ],
+        [
+          2,
+          4,
+          5,
+          6,
+          8,
+          9
+        ],
+        [
+          2,
+          4,
+          5,
+          7,
+          8,
+          9
+        ],
+        [
+          2,
+          4,
+          6,
+          7,
+          8,
+          9
+        ],
+        [
+          2,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        [
+          3,
+          4,
+          5,
+          6,
+          7,
+          9
+        ],
+        [
+          3,
+          4,
+          5,
+          6,
+          8,
+          9
+        ],
+        [
+          3,
+          4,
+          5,
+          7,
+          8,
+          9
+        ],
+        [
+          3,
+          4,
+          6,
+          7,
+          8,
+          9
+        ],
+        [
+          3,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      ],
+      "function_name": "subsequences",
+      "buggy_result_status": "success",
+      "buggy_error": null
+    },
+    {
+      "program": "gcd",
+      "buggy_file": "QuixBugs/python_programs/gcd.py",
+      "correct_file": "QuixBugs/correct_python_programs/gcd.py",
+      "test_file": "QuixBugs/json_testcases/gcd.json",
+      "test_index": 5,
+      "test_line": 6,
+      "args": [
+        3,
+        12
+      ],
+      "expected": 3,
+      "function_name": "gcd",
+      "buggy_result_status": "error",
+      "buggy_error": "RecursionError: maximum recursion depth exceeded"
+    },
+    {
+      "program": "next_permutation",
+      "buggy_file": "QuixBugs/python_programs/next_permutation.py",
+      "correct_file": "QuixBugs/correct_python_programs/next_permutation.py",
+      "test_file": "QuixBugs/json_testcases/next_permutation.json",
+      "test_index": 4,
+      "test_line": 5,
+      "args": [
+        [
+          4,
+          5,
+          8,
+          7,
+          1
+        ]
+      ],
+      "expected": [
+        4,
+        7,
+        1,
+        5,
+        8
+      ],
+      "function_name": "next_permutation",
+      "buggy_result_status": "success",
+      "buggy_error": null
+    },
+    {
+      "program": "find_first_in_sorted",
+      "buggy_file": "QuixBugs/python_programs/find_first_in_sorted.py",
+      "correct_file": "QuixBugs/correct_python_programs/find_first_in_sorted.py",
+      "test_file": "QuixBugs/json_testcases/find_first_in_sorted.json",
+      "test_index": 4,
+      "test_line": 5,
+      "args": [
+        [
+          0,
+          1,
+          6,
+          8,
+          13,
+          14,
+          67,
+          128
+        ],
+        80
+      ],
+      "expected": -1,
+      "function_name": "find_first_in_sorted",
+      "buggy_result_status": "timeout",
+      "buggy_error": "执行超过 5 秒"
+    },
+    {
+      "program": "next_permutation",
+      "buggy_file": "QuixBugs/python_programs/next_permutation.py",
+      "correct_file": "QuixBugs/correct_python_programs/next_permutation.py",
+      "test_file": "QuixBugs/json_testcases/next_permutation.json",
+      "test_index": 1,
+      "test_line": 2,
+      "args": [
+        [
+          3,
+          5,
+          6,
+          2,
+          1
+        ]
+      ],
+      "expected": [
+        3,
+        6,
+        1,
+        2,
+        5
+      ],
+      "function_name": "next_permutation",
+      "buggy_result_status": "success",
+      "buggy_error": null
+    },
+    {
+      "program": "wrap",
+      "buggy_file": "QuixBugs/python_programs/wrap.py",
+      "correct_file": "QuixBugs/correct_python_programs/wrap.py",
+      "test_file": "QuixBugs/json_testcases/wrap.json",
+      "test_index": 0,
+      "test_line": 1,
+      "args": [
+        "The leaves did not stir on the trees, grasshoppers chirruped, and the monotonous hollow sound of the sea rising up from below, spoke of the peace, of the eternal sleep awaiting us. So it must have sounded when there was no Yalta, no Oreanda here; so it sounds now, and it will sound as indifferently and monotonously when we are all no more. And in this constancy, in this complete indifference to the life and death of each of us, there lies hid, perhaps, a pledge of our eternal salvation, of the unceasing movement of life upon earth, of unceasing progress towards perfection. Sitting beside a young woman who in the dawn seemed so lovely, soothed and spellbound in these magical surroundings - the sea, mountains, clouds, the open sky - Gurov thought how in reality everything is beautiful in this world when one reflects: everything except what we think or do ourselves when we forget our human dignity and the higher aims of our existence.",
+        50
+      ],
+      "expected": [
+        "The leaves did not stir on the trees, grasshoppers",
+        " chirruped, and the monotonous hollow sound of the",
+        " sea rising up from below, spoke of the peace, of",
+        " the eternal sleep awaiting us. So it must have",
+        " sounded when there was no Yalta, no Oreanda here;",
+        " so it sounds now, and it will sound as",
+        " indifferently and monotonously when we are all no",
+        " more. And in this constancy, in this complete",
+        " indifference to the life and death of each of us,",
+        " there lies hid, perhaps, a pledge of our eternal",
+        " salvation, of the unceasing movement of life upon",
+        " earth, of unceasing progress towards perfection.",
+        " Sitting beside a young woman who in the dawn",
+        " seemed so lovely, soothed and spellbound in these",
+        " magical surroundings - the sea, mountains,",
+        " clouds, the open sky - Gurov thought how in",
+        " reality everything is beautiful in this world",
+        " when one reflects: everything except what we",
+        " think or do ourselves when we forget our human",
+        " dignity and the higher aims of our existence."
+      ],
+      "function_name": "wrap",
+      "buggy_result_status": "success",
+      "buggy_error": null
+    },
+    {
+      "program": "bitcount",
+      "buggy_file": "QuixBugs/python_programs/bitcount.py",
+      "correct_file": "QuixBugs/correct_python_programs/bitcount.py",
+      "test_file": "QuixBugs/json_testcases/bitcount.json",
+      "test_index": 0,
+      "test_line": 1,
+      "args": [
+        127
+      ],
+      "expected": 7,
+      "function_name": "bitcount",
+      "buggy_result_status": "timeout",
+      "buggy_error": "执行超过 5 秒"
+    },
+    {
+      "program": "longest_common_subsequence",
+      "buggy_file": "QuixBugs/python_programs/longest_common_subsequence.py",
+      "correct_file": "QuixBugs/correct_python_programs/longest_common_subsequence.py",
+      "test_file": "QuixBugs/json_testcases/longest_common_subsequence.json",
+      "test_index": 7,
+      "test_line": 8,
+      "args": [
+        "ABCBDAB",
+        "BDCABA"
+      ],
+      "expected": "BCBA",
+      "function_name": "longest_common_subsequence",
+      "buggy_result_status": "success",
+      "buggy_error": null
+    },
+    {
+      "program": "kheapsort",
+      "buggy_file": "QuixBugs/python_programs/kheapsort.py",
+      "correct_file": "QuixBugs/correct_python_programs/kheapsort.py",
+      "test_file": "QuixBugs/json_testcases/kheapsort.json",
+      "test_index": 2,
+      "test_line": 3,
+      "args": [
+        [
+          5,
+          4,
+          3,
+          2,
+          1
+        ],
+        4
+      ],
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "function_name": "kheapsort",
+      "buggy_result_status": "success",
+      "buggy_error": null
+    },
+    {
+      "program": "levenshtein",
+      "buggy_file": "QuixBugs/python_programs/levenshtein.py",
+      "correct_file": "QuixBugs/correct_python_programs/levenshtein.py",
+      "test_file": "QuixBugs/json_testcases/levenshtein.json",
+      "test_index": 4,
+      "test_line": 5,
+      "args": [
+        "abcdefg",
+        "gabcdef"
+      ],
+      "expected": 2,
+      "function_name": "levenshtein",
+      "buggy_result_status": "success",
+      "buggy_error": null
+    },
+    {
+      "program": "pascal",
+      "buggy_file": "QuixBugs/python_programs/pascal.py",
+      "correct_file": "QuixBugs/correct_python_programs/pascal.py",
+      "test_file": "QuixBugs/json_testcases/pascal.json",
+      "test_index": 1,
+      "test_line": 2,
+      "args": [
+        2
+      ],
+      "expected": [
+        [
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "function_name": "pascal",
+      "buggy_result_status": "success",
+      "buggy_error": null
+    },
+    {
+      "program": "to_base",
+      "buggy_file": "QuixBugs/python_programs/to_base.py",
+      "correct_file": "QuixBugs/correct_python_programs/to_base.py",
+      "test_file": "QuixBugs/json_testcases/to_base.json",
+      "test_index": 6,
+      "test_line": 7,
+      "args": [
+        27,
+        23
+      ],
+      "expected": "14",
+      "function_name": "to_base",
+      "buggy_result_status": "success",
+      "buggy_error": null
+    },
+    {
+      "program": "powerset",
+      "buggy_file": "QuixBugs/python_programs/powerset.py",
+      "correct_file": "QuixBugs/correct_python_programs/powerset.py",
+      "test_file": "QuixBugs/json_testcases/powerset.json",
+      "test_index": 0,
+      "test_line": 1,
+      "args": [
+        [
+          "a",
+          "b",
+          "c"
+        ]
+      ],
+      "expected": [
+        [],
+        [
+          "c"
+        ],
+        [
+          "b"
+        ],
+        [
+          "b",
+          "c"
+        ],
+        [
+          "a"
+        ],
+        [
+          "a",
+          "c"
+        ],
+        [
+          "a",
+          "b"
+        ],
+        [
+          "a",
+          "b",
+          "c"
+        ]
+      ],
+      "function_name": "powerset",
+      "buggy_result_status": "success",
+      "buggy_error": null
+    },
+    {
+      "program": "bitcount",
+      "buggy_file": "QuixBugs/python_programs/bitcount.py",
+      "correct_file": "QuixBugs/correct_python_programs/bitcount.py",
+      "test_file": "QuixBugs/json_testcases/bitcount.json",
+      "test_index": 2,
+      "test_line": 3,
+      "args": [
+        3005
+      ],
+      "expected": 9,
+      "function_name": "bitcount",
+      "buggy_result_status": "timeout",
+      "buggy_error": "执行超过 5 秒"
+    },
+    {
+      "program": "find_in_sorted",
+      "buggy_file": "QuixBugs/python_programs/find_in_sorted.py",
+      "correct_file": "QuixBugs/correct_python_programs/find_in_sorted.py",
+      "test_file": "QuixBugs/json_testcases/find_in_sorted.json",
+      "test_index": 6,
+      "test_line": 7,
+      "args": [
+        [
+          24,
+          26,
+          28,
+          50,
+          59
+        ],
+        101
+      ],
+      "expected": -1,
+      "function_name": "find_in_sorted",
+      "buggy_result_status": "error",
+      "buggy_error": "RecursionError: maximum recursion depth exceeded"
+    },
+    {
+      "program": "sieve",
+      "buggy_file": "QuixBugs/python_programs/sieve.py",
+      "correct_file": "QuixBugs/correct_python_programs/sieve.py",
+      "test_file": "QuixBugs/json_testcases/sieve.json",
+      "test_index": 2,
+      "test_line": 3,
+      "args": [
+        4
+      ],
+      "expected": [
+        2,
+        3
+      ],
+      "function_name": "sieve",
+      "buggy_result_status": "success",
+      "buggy_error": null
+    },
+    {
+      "program": "pascal",
+      "buggy_file": "QuixBugs/python_programs/pascal.py",
+      "correct_file": "QuixBugs/correct_python_programs/pascal.py",
+      "test_file": "QuixBugs/json_testcases/pascal.json",
+      "test_index": 4,
+      "test_line": 5,
+      "args": [
+        5
+      ],
+      "expected": [
+        [
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          3,
+          3,
+          1
+        ],
+        [
+          1,
+          4,
+          6,
+          4,
+          1
+        ]
+      ],
+      "function_name": "pascal",
+      "buggy_result_status": "error",
+      "buggy_error": "IndexError: list index out of range"
+    },
+    {
+      "program": "subsequences",
+      "buggy_file": "QuixBugs/python_programs/subsequences.py",
+      "correct_file": "QuixBugs/correct_python_programs/subsequences.py",
+      "test_file": "QuixBugs/json_testcases/subsequences.json",
+      "test_index": 8,
+      "test_line": 9,
+      "args": [
+        1,
+        10,
+        1
+      ],
+      "expected": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ],
+        [
+          6
+        ],
+        [
+          7
+        ],
+        [
+          8
+        ],
+        [
+          9
+        ]
+      ],
+      "function_name": "subsequences",
+      "buggy_result_status": "success",
+      "buggy_error": null
+    },
+    {
+      "program": "powerset",
+      "buggy_file": "QuixBugs/python_programs/powerset.py",
+      "correct_file": "QuixBugs/correct_python_programs/powerset.py",
+      "test_file": "QuixBugs/json_testcases/powerset.json",
+      "test_index": 4,
+      "test_line": 5,
+      "args": [
+        [
+          "x",
+          "df",
+          "z",
+          "m"
+        ]
+      ],
+      "expected": [
+        [],
+        [
+          "m"
+        ],
+        [
+          "z"
+        ],
+        [
+          "z",
+          "m"
+        ],
+        [
+          "df"
+        ],
+        [
+          "df",
+          "m"
+        ],
+        [
+          "df",
+          "z"
+        ],
+        [
+          "df",
+          "z",
+          "m"
+        ],
+        [
+          "x"
+        ],
+        [
+          "x",
+          "m"
+        ],
+        [
+          "x",
+          "z"
+        ],
+        [
+          "x",
+          "z",
+          "m"
+        ],
+        [
+          "x",
+          "df"
+        ],
+        [
+          "x",
+          "df",
+          "m"
+        ],
+        [
+          "x",
+          "df",
+          "z"
+        ],
+        [
+          "x",
+          "df",
+          "z",
+          "m"
+        ]
+      ],
+      "function_name": "powerset",
+      "buggy_result_status": "success",
+      "buggy_error": null
+    },
+    {
+      "program": "lcs_length",
+      "buggy_file": "QuixBugs/python_programs/lcs_length.py",
+      "correct_file": "QuixBugs/correct_python_programs/lcs_length.py",
+      "test_file": "QuixBugs/json_testcases/lcs_length.json",
+      "test_index": 7,
+      "test_line": 8,
+      "args": [
+        "flippy",
+        "floppy"
+      ],
+      "expected": 3,
+      "function_name": "lcs_length",
+      "buggy_result_status": "success",
+      "buggy_error": null
+    },
+    {
+      "program": "levenshtein",
+      "buggy_file": "QuixBugs/python_programs/levenshtein.py",
+      "correct_file": "QuixBugs/correct_python_programs/levenshtein.py",
+      "test_file": "QuixBugs/json_testcases/levenshtein.json",
+      "test_index": 6,
+      "test_line": 7,
+      "args": [
+        "hello",
+        "olleh"
+      ],
+      "expected": 4,
+      "function_name": "levenshtein",
+      "buggy_result_status": "success",
+      "buggy_error": null
+    },
+    {
+      "program": "lis",
+      "buggy_file": "QuixBugs/python_programs/lis.py",
+      "correct_file": "QuixBugs/correct_python_programs/lis.py",
+      "test_file": "QuixBugs/json_testcases/lis.json",
+      "test_index": 9,
+      "test_line": 10,
+      "args": [
+        [
+          10,
+          22,
+          9,
+          33,
+          21,
+          50,
+          41,
+          60,
+          80
+        ]
+      ],
+      "expected": 6,
+      "function_name": "lis",
+      "buggy_result_status": "success",
+      "buggy_error": null
+    },
+    {
+      "program": "bitcount",
+      "buggy_file": "QuixBugs/python_programs/bitcount.py",
+      "correct_file": "QuixBugs/correct_python_programs/bitcount.py",
+      "test_file": "QuixBugs/json_testcases/bitcount.json",
+      "test_index": 3,
+      "test_line": 4,
+      "args": [
+        13
+      ],
+      "expected": 3,
+      "function_name": "bitcount",
+      "buggy_result_status": "timeout",
+      "buggy_error": "执行超过 5 秒"
+    },
+    {
+      "program": "next_permutation",
+      "buggy_file": "QuixBugs/python_programs/next_permutation.py",
+      "correct_file": "QuixBugs/correct_python_programs/next_permutation.py",
+      "test_file": "QuixBugs/json_testcases/next_permutation.json",
+      "test_index": 5,
+      "test_line": 6,
+      "args": [
+        [
+          9,
+          5,
+          2,
+          6,
+          1
+        ]
+      ],
+      "expected": [
+        9,
+        5,
+        6,
+        1,
+        2
+      ],
+      "function_name": "next_permutation",
+      "buggy_result_status": "success",
+      "buggy_error": null
+    },
+    {
+      "program": "kth",
+      "buggy_file": "QuixBugs/python_programs/kth.py",
+      "correct_file": "QuixBugs/correct_python_programs/kth.py",
+      "test_file": "QuixBugs/json_testcases/kth.json",
+      "test_index": 5,
+      "test_line": 6,
+      "args": [
+        [
+          45,
+          2,
+          6,
+          8,
+          42,
+          90,
+          322
+        ],
+        1
+      ],
+      "expected": 6,
+      "function_name": "kth",
+      "buggy_result_status": "error",
+      "buggy_error": "IndexError: list index out of range"
+    },
+    {
+      "program": "get_factors",
+      "buggy_file": "QuixBugs/python_programs/get_factors.py",
+      "correct_file": "QuixBugs/correct_python_programs/get_factors.py",
+      "test_file": "QuixBugs/json_testcases/get_factors.json",
+      "test_index": 2,
+      "test_line": 3,
+      "args": [
+        101
+      ],
+      "expected": [
+        101
+      ],
+      "function_name": "get_factors",
+      "buggy_result_status": "success",
+      "buggy_error": null
+    },
+    {
+      "program": "sieve",
+      "buggy_file": "QuixBugs/python_programs/sieve.py",
+      "correct_file": "QuixBugs/correct_python_programs/sieve.py",
+      "test_file": "QuixBugs/json_testcases/sieve.json",
+      "test_index": 1,
+      "test_line": 2,
+      "args": [
+        2
+      ],
+      "expected": [
+        2
+      ],
+      "function_name": "sieve",
+      "buggy_result_status": "success",
+      "buggy_error": null
+    },
+    {
+      "program": "bucketsort",
+      "buggy_file": "QuixBugs/python_programs/bucketsort.py",
+      "correct_file": "QuixBugs/correct_python_programs/bucketsort.py",
+      "test_file": "QuixBugs/json_testcases/bucketsort.json",
+      "test_index": 6,
+      "test_line": 7,
+      "args": [
+        [
+          8,
+          5,
+          3,
+          1,
+          9,
+          6,
+          0,
+          7,
+          4,
+          2,
+          5
+        ],
+        10
+      ],
+      "expected": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "function_name": "bucketsort",
+      "buggy_result_status": "success",
+      "buggy_error": null
+    },
+    {
+      "program": "subsequences",
+      "buggy_file": "QuixBugs/python_programs/subsequences.py",
+      "correct_file": "QuixBugs/correct_python_programs/subsequences.py",
+      "test_file": "QuixBugs/json_testcases/subsequences.json",
+      "test_index": 11,
+      "test_line": 12,
+      "args": [
+        1,
+        5,
+        0
+      ],
+      "expected": [
+        []
+      ],
+      "function_name": "subsequences",
+      "buggy_result_status": "success",
+      "buggy_error": null
+    },
+    {
+      "program": "kth",
+      "buggy_file": "QuixBugs/python_programs/kth.py",
+      "correct_file": "QuixBugs/correct_python_programs/kth.py",
+      "test_file": "QuixBugs/json_testcases/kth.json",
+      "test_index": 1,
+      "test_line": 2,
+      "args": [
+        [
+          3,
+          6,
+          7,
+          1,
+          6,
+          3,
+          8,
+          9
+        ],
+        5
+      ],
+      "expected": 7,
+      "function_name": "kth",
+      "buggy_result_status": "error",
+      "buggy_error": "IndexError: list index out of range"
+    },
+    {
+      "program": "kheapsort",
+      "buggy_file": "QuixBugs/python_programs/kheapsort.py",
+      "correct_file": "QuixBugs/correct_python_programs/kheapsort.py",
+      "test_file": "QuixBugs/json_testcases/kheapsort.json",
+      "test_index": 1,
+      "test_line": 2,
+      "args": [
+        [
+          3,
+          2,
+          1,
+          5,
+          4
+        ],
+        2
+      ],
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "function_name": "kheapsort",
+      "buggy_result_status": "success",
+      "buggy_error": null
+    },
+    {
+      "program": "gcd",
+      "buggy_file": "QuixBugs/python_programs/gcd.py",
+      "correct_file": "QuixBugs/correct_python_programs/gcd.py",
+      "test_file": "QuixBugs/json_testcases/gcd.json",
+      "test_index": 2,
+      "test_line": 3,
+      "args": [
+        37,
+        600
+      ],
+      "expected": 1,
+      "function_name": "gcd",
+      "buggy_result_status": "error",
+      "buggy_error": "RecursionError: maximum recursion depth exceeded"
+    },
+    {
+      "program": "next_permutation",
+      "buggy_file": "QuixBugs/python_programs/next_permutation.py",
+      "correct_file": "QuixBugs/correct_python_programs/next_permutation.py",
+      "test_file": "QuixBugs/json_testcases/next_permutation.json",
+      "test_index": 2,
+      "test_line": 3,
+      "args": [
+        [
+          3,
+          5,
+          6,
+          2
+        ]
+      ],
+      "expected": [
+        3,
+        6,
+        2,
+        5
+      ],
+      "function_name": "next_permutation",
+      "buggy_result_status": "success",
+      "buggy_error": null
+    },
+    {
+      "program": "longest_common_subsequence",
+      "buggy_file": "QuixBugs/python_programs/longest_common_subsequence.py",
+      "correct_file": "QuixBugs/correct_python_programs/longest_common_subsequence.py",
+      "test_file": "QuixBugs/json_testcases/longest_common_subsequence.json",
+      "test_index": 6,
+      "test_line": 7,
+      "args": [
+        "TATAGC",
+        "TAGCAG"
+      ],
+      "expected": "TAAG",
+      "function_name": "longest_common_subsequence",
+      "buggy_result_status": "success",
+      "buggy_error": null
+    },
+    {
+      "program": "levenshtein",
+      "buggy_file": "QuixBugs/python_programs/levenshtein.py",
+      "correct_file": "QuixBugs/correct_python_programs/levenshtein.py",
+      "test_file": "QuixBugs/json_testcases/levenshtein.json",
+      "test_index": 1,
+      "test_line": 2,
+      "args": [
+        "kitten",
+        "sitting"
+      ],
+      "expected": 3,
+      "function_name": "levenshtein",
+      "buggy_result_status": "success",
+      "buggy_error": null
+    },
+    {
+      "program": "mergesort",
+      "buggy_file": "QuixBugs/python_programs/mergesort.py",
+      "correct_file": "QuixBugs/correct_python_programs/mergesort.py",
+      "test_file": "QuixBugs/json_testcases/mergesort.json",
+      "test_index": 12,
+      "test_line": 13,
+      "args": [
+        [
+          10,
+          16,
+          6,
+          1,
+          14,
+          19,
+          15,
+          2,
+          9,
+          4,
+          18,
+          17,
+          12,
+          3,
+          11,
+          8,
+          13,
+          5,
+          7
+        ]
+      ],
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "function_name": "mergesort",
+      "buggy_result_status": "error",
+      "buggy_error": "RecursionError: maximum recursion depth exceeded"
+    },
+    {
+      "program": "possible_change",
+      "buggy_file": "QuixBugs/python_programs/possible_change.py",
+      "correct_file": "QuixBugs/correct_python_programs/possible_change.py",
+      "test_file": "QuixBugs/json_testcases/possible_change.json",
+      "test_index": 7,
+      "test_line": 8,
+      "args": [
+        [
+          1,
+          5,
+          10,
+          25,
+          50,
+          100
+        ],
+        140
+      ],
+      "expected": 817,
+      "function_name": "possible_change",
+      "buggy_result_status": "error",
+      "buggy_error": "ValueError: not enough values to unpack (expected at least 1, got 0)"
+    },
+    {
+      "program": "levenshtein",
+      "buggy_file": "QuixBugs/python_programs/levenshtein.py",
+      "correct_file": "QuixBugs/correct_python_programs/levenshtein.py",
+      "test_file": "QuixBugs/json_testcases/levenshtein.json",
+      "test_index": 0,
+      "test_line": 1,
+      "args": [
+        "electron",
+        "neutron"
+      ],
+      "expected": 3,
+      "function_name": "levenshtein",
+      "buggy_result_status": "success",
+      "buggy_error": null
+    },
+    {
+      "program": "find_first_in_sorted",
+      "buggy_file": "QuixBugs/python_programs/find_first_in_sorted.py",
+      "correct_file": "QuixBugs/correct_python_programs/find_first_in_sorted.py",
+      "test_file": "QuixBugs/json_testcases/find_first_in_sorted.json",
+      "test_index": 2,
+      "test_line": 3,
+      "args": [
+        [
+          3,
+          4,
+          5,
+          5,
+          5,
+          5,
+          6
+        ],
+        2
+      ],
+      "expected": -1,
+      "function_name": "find_first_in_sorted",
+      "buggy_result_status": "timeout",
+      "buggy_error": "执行超过 5 秒"
+    },
+    {
+      "program": "mergesort",
+      "buggy_file": "QuixBugs/python_programs/mergesort.py",
+      "correct_file": "QuixBugs/correct_python_programs/mergesort.py",
+      "test_file": "QuixBugs/json_testcases/mergesort.json",
+      "test_index": 10,
+      "test_line": 11,
+      "args": [
+        [
+          4,
+          3,
+          1,
+          5,
+          2
+        ]
+      ],
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "function_name": "mergesort",
+      "buggy_result_status": "error",
+      "buggy_error": "RecursionError: maximum recursion depth exceeded"
+    }
+  ]
+}

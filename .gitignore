@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+venv/
+
+# Base model - too large
+models/
+
+# Training checkpoints
+outputs/
+
+# Temporary files
+*.tmp
+*.log
+
+# IDE
+.vscode/
+.idea/
