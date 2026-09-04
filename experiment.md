@@ -100,16 +100,17 @@ seed:
 42
 
 ---
+## 6. Trainable Parameters Total parameters:
+trainable params: 4,358,144 || all params: 1,548,072,448 || trainable%: 0.2815
 
-
-## 6. Training Results
+## 7. Training Results
 
 Loss curve:
 outputs/qwen2.5-coder-1.5b-lora/loss_curve.png
 
 ---
 
-## 7. Evaluation
+## 8. Evaluation
 
 Validation samples:
 5
