@@ -86,7 +86,7 @@ quixbugs-lora-experiment/
 │   ├── adapter_config.json
 │   └── adapter_model.safetensors
 │
-├── data/                      
+├── data/
 │   ├── metadata/
 │   │   └── metadata.json
 │   │
@@ -97,9 +97,11 @@ quixbugs-lora-experiment/
 ├── QuixBugs/                  # Original QuixBugs benchmark
 │
 ├── results/                   # Experiment results
-│   ├── evaluation.csv         # Obtain via predictions.jsonl
-│   ├── loss_curve.png
-│   └── predictions.jsonl
+│   ├── evaluate_results.txt       # Verify semantic correctness
+│   ├── evaluate_results_base.txt  # Verify semantic correctness
+│   ├── evaluation.csv             # Obtain via predictions.jsonl
+│   ├── loss_curve.png             
+│   └── predictions.jsonl          
 │
 └── scripts/                   # Experiment scripts
     ├── check_params.py
