@@ -113,7 +113,11 @@ quixbugs-lora-experiment/
 ```
 
 ---
-
+Before officially starting, we need to download the dataset first:
+```bash
+cd /root/quixbugs_lora
+git clone https://github.com/jkoppel/QuixBugs.git
+```
 ## 📊 Dataset Format
 
 The training data follows an instruction tuning format:
