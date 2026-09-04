@@ -1,0 +1,198 @@
+================================================================================
+Validation Sample 1
+================================================================================
+
+[MODEL OUTPUT]
+
+[transformers] The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+def rpn_eval(tokens):
+    def op(symbol, a, b):
+        return {
+            '+': lambda a, b: a + b,
+            '-': lambda a, b: a - b,
+            '*': lambda a, b: a * b,
+            '/': lambda a, b: a / b
+        }[symbol](a, b)
+
+    stack = []
+
+    for token in tokens:
+        if isinstance(token, float):
+            stack.append(token)
+        else:
+            a = stack.pop()
+            b = stack.pop()
+            stack.append(
+                op(token, b, a)
+            )
+
+    return stack.pop()
+
+[GROUND TRUTH]
+
+def rpn_eval(tokens):
+    def op(symbol, a, b):
+        return {
+            '+': lambda a, b: a + b,
+            '-': lambda a, b: a - b,
+            '*': lambda a, b: a * b,
+            '/': lambda a, b: a / b
+        }[symbol](a, b)
+
+    stack = []
+
+    for token in tokens:
+        if isinstance(token, float):
+            stack.append(token)
+        else:
+            a = stack.pop()
+            b = stack.pop()
+            stack.append(
+                op(token, b, a)
+            )
+
+    return stack.pop()
+
+
+================================================================================
+Validation Sample 2
+================================================================================
+
+[MODEL OUTPUT]
+
+def knapsack(capacity, items):
+    from collections import defaultdict
+    memo = defaultdict(int)
+
+    for i in range(1, len(items) + 1):
+        weight, value = items[i - 1]
+
+        for j in range(capacity, -1, -1):
+            memo[i, j] = memo[i - 1, j]
+
+            if weight < j:
+                memo[i, j] = max(
+                    memo[i, j],
+                    value + memo[i - 1, j - weight]
+                )
+
+    return memo[len(items), capacity]
+
+[GROUND TRUTH]
+
+def knapsack(capacity, items):
+    from collections import defaultdict
+    memo = defaultdict(int)
+
+    for i in range(1, len(items) + 1):
+        weight, value = items[i - 1]
+
+        for j in range(1, capacity + 1):
+            memo[i, j] = memo[i - 1, j]
+
+            if weight <= j:
+                memo[i, j] = max(
+                    memo[i, j],
+                    value + memo[i - 1, j - weight]
+                )
+
+    return memo[len(items), capacity]
+
+
+================================================================================
+Validation Sample 3
+================================================================================
+
+[MODEL OUTPUT]
+
+def get_factors(n):
+    if n == 1:
+        return []
+
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return [i] + get_factors(n // i) or [n // i, i]
+
+    return []
+
+[GROUND TRUTH]
+
+def get_factors(n):
+    if n == 1:
+        return []
+
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return [i] + get_factors(n // i)
+
+    return [n]
+
+
+================================================================================
+Validation Sample 4
+================================================================================
+
+[MODEL OUTPUT]
+
+def find_in_sorted(arr, x):
+    def binsearch(start, end):
+        if start == end:
+            return -1
+        mid = start + (end - start) // 2
+        if x < arr[mid]:
+            return binsearch(start, mid)
+        elif x > arr[mid]:
+            return binsearch(mid + 1, end)
+        else:
+            return mid
+
+    return binsearch(0, len(arr))
+
+[GROUND TRUTH]
+
+def find_in_sorted(arr, x):
+    def binsearch(start, end):
+        if start == end:
+            return -1
+        mid = start + (end - start) // 2
+        if x < arr[mid]:
+            return binsearch(start, mid)
+        elif x > arr[mid]:
+            return binsearch(mid + 1, end)
+        else:
+            return mid
+
+    return binsearch(0, len(arr))
+
+
+================================================================================
+Validation Sample 5
+================================================================================
+
+[MODEL OUTPUT]
+
+def subsequences(a, b, k):
+    if k == 0:
+        return [[]]
+
+    ret = []
+    for i in range(a, b + 1 - k):
+        ret.extend(
+            [i] + rest for rest in subsequences(i + 1, b, k - 1)
+        )
+
+    return ret
+
+[GROUND TRUTH]
+
+def subsequences(a, b, k):
+    if k == 0:
+        return [[]]
+
+    ret = []
+    for i in range(a, b + 1 - k):
+        ret.extend(
+            [i] + rest for rest in subsequences(i + 1, b, k - 1)
+        )
+
+    return ret
