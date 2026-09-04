@@ -97,7 +97,7 @@ quixbugs-lora-experiment/
 ├── QuixBugs/                  # Original QuixBugs benchmark
 │
 ├── results/                   # Experiment results
-│   ├── evaluation.csv
+│   ├── evaluation.csv         # Obtain via predictions.jsonl
 │   ├── loss_curve.png
 │   └── predictions.jsonl
 │
